@@ -1,10 +1,9 @@
+import FilterComponent from "@/components/FilterComponent";
 import Navbar from "@/components/Navbar";
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import ProductItem from "@/components/ProductItem";
+import { Grid } from "@mui/material";
+import Box from "@mui/material/Box";
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -15,7 +14,23 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Box>
         <Navbar />
+        <FilterComponent />
+        <Grid
+          container
+          spacing={2}
+          margin={"20px"}
+          marginTop={"170px"}
+          mr={"-17px"}
+        >
+          {[...Array(6)].map((_, index: number) => (
+            <Grid item key={index} xs={12} sm={6} md={4}>
+              <ProductItem />
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
     </>
-  )
+  );
 }
