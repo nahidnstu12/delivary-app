@@ -1,0 +1,111 @@
+[
+  {
+    "name": "pepper pizza 1",
+    "variants": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "price": [
+      {
+        "small": 350,
+        "medium": 550,
+        "large": 800
+      }
+    ],
+    "category": "non veg",
+    "image": "/images/pizza1.jpg",
+    "description": "this is best pizza in non veg"
+  },
+  {
+    "name": "pepper pizza 2",
+    "variants": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "price": [
+      {
+        "small": 350,
+        "medium": 550,
+        "large": 800
+      }
+    ],
+    "category": "non veg",
+    "image": "/images/pizza2.jpg",
+    "description": "this is best pizza in non veg"
+  },
+  {
+    "name": "pepper pizza 3",
+    "variants": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "price": [
+      {
+        "small": 350,
+        "medium": 550,
+        "large": 800
+      }
+    ],
+    "category": "non veg",
+    "image": "/images/pizza1.jpg",
+    "description": "this is best pizza in non veg"
+  },
+  {
+    "name": "pepper pizza 4",
+    "variants": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "price": [
+      {
+        "small": 350,
+        "medium": 550,
+        "large": 800
+      }
+    ],
+    "category": "non veg",
+    "image": "/images/pizza3.jpg",
+    "description": "this is best pizza in non veg"
+  },
+  {
+    "name": "pepper pizza",
+    "variants": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "price": [
+      {
+        "small": 350,
+        "medium": 550,
+        "large": 800
+      }
+    ],
+    "category": "non veg",
+    "image": "/images/pizza1.jpg",
+    "description": "this is best pizza in non veg"
+  },
+  {
+    "name": "pepper pizza",
+    "variants": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "price": [
+      {
+        "small": 350,
+        "medium": 550,
+        "large": 800
+      }
+    ],
+    "category": "non veg",
+    "image": "/images/pizza1.jpg",
+    "description": "this is best pizza in non veg"
+  }
+
+]
