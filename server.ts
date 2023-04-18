@@ -3,7 +3,9 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import "./db";
-import { fetchAll } from "./models/food-model";
+import "./routes";
+import foodRouter from "./routes/food-router";
+import cartRouter from "./routes/cart-router";
 
 dotenv.config();
 
@@ -15,7 +17,9 @@ app.use(express.json());
 
 const port = process.env.PORT;
 
-app.get("/all-foods", fetchAll);
+// router
+app.use("/foods", foodRouter);
+app.use("/carts", cartRouter);
 
 app.listen(port, () => {
   console.log(`[server]: Server is running at http://localhost:${port}`);

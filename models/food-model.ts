@@ -22,19 +22,8 @@ const foodSchema = mongoose.Schema({
   },
 });
 
-const Food = new mongoose.model("Food", foodSchema);
-module.exports = Food;
+const Food = new mongoose.model("Product", foodSchema);
+
+export default Food;
 
 //controller
-exports.fetchAll = async (req, res) => {
-  try {
-    const data = await Food.find({}).select({
-      _id: 0,
-      __v: 0,
-    });
-    res.status(200).json({ data, total: data.length });
-  } catch (err) {
-    console.log(err);
-    res.send(err.message);
-  }
-};
